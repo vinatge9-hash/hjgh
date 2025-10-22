@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurora Coffee Collective — a modern cafe delivering high-quality, small-batch coffee in a welcoming space. Explore signature drinks, sustainable sourcing, and community vibes." />
+  <meta property="og:title" content="Aurora Coffee Collective — Home" />
+  <meta property="og:description" content="Discover Aurora Coffee Collective, a local cafe focused on quality, sustainability, and community." />
+  <meta property="og:type" content="website" />
+  <title>Aurora Coffee Collective — Home</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5A3F2D',
+            secondary: '#2A5D3F',
+            accent: '#C98F1E'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Inter', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { font-family: var(--font-body); }
+    h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+    .font-heading { font-family: var(--font-heading); }
+    .font-body { font-family: var(--font-body); }
+  </style>
+</head>
+<body class="bg-white text-neutral-900 font-body">
+  <!-- Skip to content for accessibility -->
+  <a href="#main" class="absolute -top-40 left-0 p-4 focus:absolute focus:top-0 bg-white text-black rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500">Skip to content</a>
+
+  <!-- Global Navigation -->
+  <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50" aria-label="Site header">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-bold text-neutral-900" aria-label="Aurora Coffee Collective">Aurora Coffee Collective</span>
+      </div>
+      <nav aria-label="Main navigation" class="hidden md:flex items-center gap-8 text-neutral-700">
+        <a href="home.html" class="hover:text-primary">Home</a>
+        <a href="about.html" class="hover:text-primary">About</a>
+        <a href="menu.html" class="hover:text-primary">Menu</a>
+        <a href="locations.html" class="hover:text-primary">Locations</a>
+        <a href="contact.html" class="hover:text-primary">Contact</a>
+      </nav>
+      <a href="menu.html" class="hidden md:inline-block bg-primary text-white px-5 py-2 rounded-full font-semibold hover:scale-105 transition-all duration-300">Order Online</a>
+      <button class="md:hidden text-neutral-700" id="mobileMenuBtn" aria-label="Open mobile menu" aria-expanded="false">☰</button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <a href="home.html" class="block px-6 py-3 hover:bg-gray-50">Home</a>
+      <a href="about.html" class="block px-6 py-3 hover:bg-gray-50">About</a>
+      <a href="menu.html" class="block px-6 py-3 hover:bg-gray-50">Menu</a>
+      <a href="locations.html" class="block px-6 py-3 hover:bg-gray-50">Locations</a>
+      <a href="contact.html" class="block px-6 py-3 hover:bg-gray-50">Contact</a>
+      <a href="menu.html" class="block px-6 py-3 border-t border-gray-200">Order Online</a>
+    </div>
+  </header>
+
+  <main id="main" class="pt-20">
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/hero-aurora.jpg" alt="Cozy Aurora cafe at night with warm lighting" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-neutral-900/60 to-neutral-900/40"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4" style="font-family: var(--font-heading);">Where Local Craft Meets Modern Coffee Moments</h1>
+        <p class="text-lg md:text-2xl text-white/90 mb-6" style="font-family: var(--font-body);">Small-batch drinks, sustainable sourcing, and a welcoming space for work, study, and conversation.</p>
+        <a href="menu.html" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-8 py-3 rounded-full font-semibold text-lg hover:scale-105 hover:shadow-2xl transition-all duration-300" aria-label="Order Online">Order Online</a>
+      </div>
+    </section>
+
+    <!-- Featured Drinks -->
+    <section class="py-12" aria-label="Signature Drinks">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold text-neutral-900 mb-6" style="font-family: var(--font-heading);">Signature Drinks</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 p-4" aria-label="Aurora Latte card">
+            <img src="assets/images/drink-1.jpg" alt="Aurora Latte with vanilla and orange zest" class="w-full h-48 object-cover rounded-2xl mb-4" />
+            <h3 class="text-lg font-semibold mb-2" style="font-family: var(--font-heading);">Aurora Latte</h3>
+            <p class="text-sm text-neutral-700 mb-3">Velvety latte with vanilla and a kiss of orange zest.</p>
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold">$5.50</span>
+              <a href="menu.html#aurora-latte" class="inline-block bg-primary text-white px-4 py-2 rounded-full text-sm">Add to Order</a>
+            </div>
+          </article>
+          <!-- Card 2 -->
+          <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 p-4" aria-label="Solar Espresso card">
+            <img src="assets/images/drink-2.jpg" alt="Solar Espresso with caramel and cocoa" class="w-full h-48 object-cover rounded-2xl mb-4" />
+            <h3 class="text-lg font-semibold mb-2" style="font-family: var(--font-heading);">Solar Espresso</h3>
+            <p class="text-sm text-neutral-700 mb-3">Double shot espresso with caramel and cocoa.</p>
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold">$4.75</span>
+              <a href="menu.html#solar-espresso" class="inline-block bg-primary text-white px-4 py-2 rounded-full text-sm">Add to Order</a>
+            </div>
+          </article>
+          <!-- Card 3 -->
+          <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 p-4" aria-label="Stellar Cold Brew card">
+            <img src="assets/images/drink-3.jpg" alt="Stellar Cold Brew with chocolaty finish" class="w-full h-48 object-cover rounded-2xl mb-4" />
+            <h3 class="text-lg font-semibold mb-2" style="font-family: var(--font-heading);">Stellar Cold Brew</h3>
+            <p class="text-sm text-neutral-700 mb-3">Smooth, chocolaty cold brew with a bright finish.</p>
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold">$5.25</span>
+              <a href="menu.html#stellar-cold-brew" class="inline-block bg-primary text-white px-4 py-2 rounded-full text-sm">Add to Order</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reasons to Visit -->
+    <section class="py-12 bg-none" aria-label="Reasons to visit">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold text-neutral-900 mb-6" style="font-family: var(--font-heading);">Why Visit Aurora</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Feature 1 -->
+          <div class="bg-white rounded-2xl p-6 shadow hover:shadow-lg hover:lift-xl">
+            <div class="mb-3 text-primary" aria-label="Community icon">💬</div>
+            <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Community Hub</h4>
+            <p class="text-sm text-neutral-700">A welcoming space for conversations, study, and collaboration.</p>
+            <a href="about.html" class="inline-block mt-2 text-primary text-sm">Learn more</a>
+          </div>
+          <!-- Feature 2 -->
+          <div class="bg-white rounded-2xl p-6 shadow hover:shadow-lg hover:lift-xl">
+            <div class="mb-3 text-primary" aria-label="Sourcing icon">🌱</div>
+            <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Sustainably Sourced</h4>
+            <p class="text-sm text-neutral-700">Direct relationships with growers and traceable origin stories.</p>
+            <a href="about.html#sourcing-story" class="inline-block mt-2 text-primary text-sm">Our sourcing</a>
+          </div>
+          <!-- Feature 3 -->
+          <div class="bg-white rounded-2xl p-6 shadow hover:shadow-lg hover:lift-xl">
+            <div class="mb-3 text-primary" aria-label="Wi-Fi icon">⚡</div>
+            <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Reliable Wi‑Fi</h4>
+            <p class="text-sm text-neutral-700">A comfortable place to work with power at every table.</p>
+            <a href="locations.html#amenities" class="inline-block mt-2 text-primary text-sm">See amenities</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="py-12 bg-neutral-50" aria-label="Testimonials">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold text-neutral-900 mb-6" style="font-family: var(--font-heading);">What people say</h2>
+        <div class="relative overflow-hidden">
+          <div id="slides" class="flex transition-transform duration-500" style="width:300%;">
+            <div class="w-full p-6 bg-white rounded-2xl shadow-lg mx-2" aria-label="Testimonial 1">
+              <p class="text-neutral-700 mb-3">"The best coffee in town with a neighborhood vibe I keep coming back to."</p>
+              <div class="flex items-center gap-3">
+                <img src="assets/images/avatar-1.jpg" alt="Jamie R. avatar" class="w-8 h-8 rounded-full" />
+                <span class="font-semibold">Jamie R.</span>
+              </div>
+            </div>
+            <div class="w-full p-6 bg-white rounded-2xl shadow-lg mx-2" aria-label="Testimonial 2">
+              <p class="text-neutral-700 mb-3">"A quiet spot to work, with great pastries and friendly baristas."</p>
+              <div class="flex items-center gap-3">
+                <img src="assets/images/avatar-2.jpg" alt="Priya S. avatar" class="w-8 h-8 rounded-full" />
+                <span class="font-semibold">Priya S.</span>
+              </div>
+            </div>
+            <div class="w-full p-6 bg-white rounded-2xl shadow-lg mx-2" aria-label="Testimonial 3">
+              <p class="text-neutral-700 mb-3">"Sustainably sourced and superbly roasted. Highly recommend."</p>
+              <div class="flex items-center gap-3">
+                <img src="assets/images/avatar-3.jpg" alt="Alex K. avatar" class="w-8 h-8 rounded-full" />
+                <span class="font-semibold">Alex K.</span>
+              </div>
+            </div>
+          </div>
+          <button id="prevSlide" aria-label="Previous testimonial" class="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow">
+            ‹
+          </button>
+          <button id="nextSlide" aria-label="Next testimonial" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow">
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-12" aria-label="Newsletter signup">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-6 items-center px-6">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-semibold mb-2" style="font-family: var(--font-heading);">Get the latest in coffee drops</h3>
+          <p class="text-neutral-700">Join our newsletter for seasonal updates, member perks, and early access to roasts.</p>
+        </div>
+        <form class="flex flex-col sm:flex-row items-center gap-3" aria-label="Newsletter form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" required class="w-full sm:flex-1 px-4 py-3 border-2 border-neutral-300 rounded-xl focus:border-primary focus:ring-4 focus:ring-primary/20 outline-none" />
+          <button class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300" aria-label="Subscribe">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-white py-16" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Visit</h4>
+        <a href="locations.html" class="block mb-1 text-neutral-200">Locations</a>
+        <a href="locations.html#hours" class="block">Hours</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Menu</h4>
+        <a href="menu.html" class="block mb-1 text-neutral-200">Drinks</a>
+        <a href="menu.html#pastries" class="block">Pastries</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Community</h4>
+        <a href="locations.html#events_and_news" class="block mb-1 text-neutral-200">Events</a>
+        <a href="about.html" class="block">Catering</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Connect</h4>
+        <div class="flex gap-4 text-2xl mt-2" aria-label="Social links">
+          <a href="#" class="hover:text-primary">Instagram</a>
+          <a href="#" class="hover:text-primary">Newsletter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Small JS: mobile menu toggle and simple testimonials slider -->
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobileMenuBtn');
+    const panel = document.getElementById('mobileMenu');
+    btn && btn.addEventListener('click', () => {
+      const expanding = panel.classList.contains('hidden');
+      panel.style.display = expanding ? 'block' : 'none';
+      panel.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(expanding));
+    });
+
+    // Simple testimonials slider
+    const slides = document.getElementById('slides');
+    const total = 3; // number of slides
+    let index = 0;
+    function show(n) {
+      const w = 100; // percent per slide since total width is 300%
+      slides.style.transform = 'translateX(' + (-n * w) + '%)';
+    }
+    document.getElementById('prevSlide').addEventListener('click', () => {
+      index = (index - 1 + total) % total;
+      show(index);
+    });
+    document.getElementById('nextSlide').addEventListener('click', () => {
+      index = (index + 1) % total;
+      show(index);
+    });
+    // Auto-rotate every 6 seconds
+    setInterval(() => { index = (index + 1) % total; show(index); }, 6000);
+  </script>
+</body>
+</html>
