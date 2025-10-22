@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurora locations — find our cafes, hours, and services for each site." />
+  <title>Aurora Coffee Collective — Locations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#5A3F2D', secondary: '#2A5D3F', accent: '#C98F1E' } } } }
+  </script>
+  <style>
+    :root { --font-heading: 'Playfair Display', serif; --font-body: 'Inter', sans-serif; }
+    html { font-family: var(--font-body); }
+    h1, h2, h3 { font-family: var(--font-heading); }
+  </style>
+</head>
+<body class="bg-white text-neutral-900 font-body">
+  <a href="#main" class="absolute -top-40 left-0 p-4 focus:absolute focus:top-0 bg-white text-black rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500">Skip to content</a>
+  <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50" aria-label="Site header">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-bold text-neutral-900">Aurora Coffee Collective</span>
+      </div>
+      <nav aria-label="Main navigation" class="hidden md:flex items-center gap-8 text-neutral-700">
+        <a href="home.html" class="hover:text-primary">Home</a>
+        <a href="about.html" class="hover:text-primary">About</a>
+        <a href="menu.html" class="hover:text-primary">Menu</a>
+        <a href="locations.html" class="hover:text-primary">Locations</a>
+        <a href="contact.html" class="hover:text-primary">Contact</a>
+      </nav>
+      <a href="menu.html" class="hidden md:inline-block bg-primary text-white px-5 py-2 rounded-full font-semibold hover:scale-105 transition-all duration-300">Order Online</a>
+    </div>
+  </header>
+
+  <main id="main" class="pt-20">
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/locations-hero.jpg" alt="Cozy cafe interior with map in background" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-neutral-900/60 to-neutral-900/40"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" style="font-family: var(--font-heading);">Visit Aurora — Find Your Local Coffee Collective</h1>
+        <p class="text-lg md:text-xl text-white/90 mb-6" style="font-family: var(--font-body);">Multiple locations, same commitment to quality and community.</p>
+        <a href="locations.html" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full font-semibold">See Locations</a>
+      </div>
+    </section>
+
+    <!-- Map and Addresses -->
+    <section id="map_and_addresses" class="py-12" aria-label="Locations map and addresses">
+      <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-6 items-start">
+        <div id="map" class="w-full h-96 bg-neutral-200 rounded-2xl" aria-label="Map placeholder">Map placeholder</div>
+        <div>
+          <h3 class="text-xl font-semibold mb-3" style="font-family: var(--font-heading);">Locations</h3>
+          <ul class="space-y-4 text-sm text-neutral-700">
+            <li><strong>Aurora Downtown</strong><br/>123 Main St, Cityville</li>
+            <li><strong>Aurora East</strong><br/>45 East Ave, Cityville</li>
+          </ul>
+          <div class="mt-4 text-sm text-neutral-700">Hours: Mon–Fri 7am–7pm; Sat–Sun 8am–6pm</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loyalty & Events -->
+    <section id="loyalty_program" class="py-12" aria-label="Loyalty and events">
+      <div class="max-w-4xl mx-auto px-6 grid lg:grid-cols-2 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow">
+          <div class="flex items-center gap-3 mb-2 text-accent" aria-label="Loyalty icon">🎟️</div>
+          <h4 class="font-semibold" style="font-family: var(--font-heading);">Loyalty That Rewards You</h4>
+          <p class="text-sm text-neutral-700">Collect stamps, earn free drinks, and unlock member perks.</p>
+          <a href="locations.html#loyalty_program" class="inline-block mt-2 text-primary">Join the program</a>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow flex flex-col justify-between">
+          <div class="flex items-center gap-3 mb-2" aria-label="Events icon">📅</div>
+          <div>
+            <h4 class="font-semibold" style="font-family: var(--font-heading);">Upcoming Events</h4>
+            <p class="text-sm text-neutral-700">Latte Art Throwdown, seasonal roastery tours, and community gatherings.</p>
+          </div>
+          <a href="locations.html#events_and_news" class="inline-block mt-2 text-primary">See all events</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Support -->
+    <section id="contact_and_support" class="py-12" aria-label="Contact & support">
+      <div class="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow" aria-label="Contact details">
+          <div class="font-semibold mb-2">Phone</div>
+          <div>(555) 012-3456</div>
+          <div class="font-semibold mt-2">Email</div>
+          <div>support@auroracoffee.co</div>
+        </div>
+        <form class="bg-white rounded-2xl p-6 shadow" aria-label="Contact form">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-semibold mb-1">Name</label>
+            <input id="name" type="text" class="w-full border border-neutral-300 rounded-lg px-3 py-2" />
+          </div>
+          <div class="mb-4">
+            <label for="email2" class="block text-sm font-semibold mb-1">Email</label>
+            <input id="email2" type="email" class="w-full border border-neutral-300 rounded-lg px-3 py-2" />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-semibold mb-1">Message</label>
+            <textarea id="message" rows="4" class="w-full border border-neutral-300 rounded-lg px-3 py-2"></textarea>
+          </div>
+          <button type="submit" class="bg-primary text-white px-6 py-2 rounded-full">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-white py-12" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Visit</h4>
+        <a href="locations.html" class="block mb-1 text-neutral-200">Locations</a>
+        <a href="#hours" class="block">Hours</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Menu</h4>
+        <a href="menu.html" class="block mb-1 text-neutral-200">Drinks</a>
+        <a href="menu.html#pastries" class="block">Seasonal</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Community</h4>
+        <a href="locations.html#events_and_news" class="block mb-1 text-neutral-200">Events</a>
+        <a href="about.html" class="block">Catering</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Connect</h4>
+        <div class="flex gap-4 text-2xl" aria-label="Social icons">
+          <a href="#" class="hover:text-primary">Instagram</a>
+          <a href="#" class="hover:text-primary">Newsletter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple map placeholder: could be replaced with an actual map widget later
+  </script>
+</body>
+</html>
