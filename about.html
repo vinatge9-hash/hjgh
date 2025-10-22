@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about Aurora Coffee Collective — our mission, values, sourcing story, and the team behind the cafe." />
+  <meta property="og:title" content="Aurora Coffee Collective — About" />
+  <meta property="og:description" content="Discover our mission, values, and the people who make Aurora Coffee Collective special." />
+  <title>Aurora Coffee Collective — About</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#5A3F2D', secondary: '#2A5D3F', accent: '#C98F1E' } } }
+    }
+  </script>
+  <style>
+    :root { --font-heading: 'Playfair Display', serif; --font-body: 'Inter', sans-serif; }
+    html { font-family: var(--font-body); }
+    h1, h2, h3, h4 { font-family: var(--font-heading); }
+  </style>
+</head>
+<body class="font-body bg-white text-neutral-900">
+  <a href="#main" class="absolute -top-40 left-0 p-4 focus:absolute focus:top-0 bg-white text-black rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500">Skip to content</a>
+  <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50" aria-label="Site header">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-bold text-neutral-900" aria-label="Aurora Coffee Collective">Aurora Coffee Collective</span>
+      </div>
+      <nav aria-label="Main navigation" class="hidden md:flex items-center gap-8 text-neutral-700">
+        <a href="home.html" class="hover:text-primary">Home</a>
+        <a href="about.html" class="hover:text-primary">About</a>
+        <a href="menu.html" class="hover:text-primary">Menu</a>
+        <a href="locations.html" class="hover:text-primary">Locations</a>
+        <a href="contact.html" class="hover:text-primary">Contact</a>
+      </nav>
+      <a href="menu.html" class="hidden md:inline-block bg-primary text-white px-5 py-2 rounded-full font-semibold hover:scale-105 transition-all duration-300">Order Online</a>
+    </div>
+  </header>
+
+  <main id="main" class="pt-20">
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/about-hero.jpg" alt="Group photo of staff and cafe environment" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-neutral-900/60 to-neutral-900/40"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-4" style="font-family: var(--font-heading);">Aurora Coffee Collective</h1>
+        <p class="text-lg md:text-2xl text-white/90 mb-6" style="font-family: var(--font-body);">A modern cafe rooted in community, quality, and sustainable practice.</p>
+        <a href="about.html#mission_values" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full font-semibold" aria-label="Our story">Our Story</a>
+      </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section id="mission_values" class="py-12" aria-label="Mission & Values">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-3" style="font-family: var(--font-heading);">Our Mission & Values</h2>
+            <p class="text-neutral-700 mb-3">We partner with farmers who practice regenerative farming, source seasonal ingredients, and design spaces that welcome everyone.</p>
+            <ul class="list-disc pl-5 text-neutral-700">
+              <li>Sustainable sourcing and fair labor</li>
+              <li>Community-centric spaces</li>
+              <li>Transparent roasting and sourcing stories</li>
+            </ul>
+          </div>
+          <div class="mt-6 md:mt-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-2xl p-4 shadow"> <strong>Regenerative farming</strong> <p class="text-sm text-neutral-700">Partnering with growers who nurture the land.</p> </div>
+              <div class="bg-white rounded-2xl p-4 shadow"> <strong>Seasonal ingredients</strong> <p class="text-sm text-neutral-700">Menus reflect peak harvests for peak flavor.</p> </div>
+              <div class="bg-white rounded-2xl p-4 shadow"> <strong>Open, transparent</strong> <p class="text-sm text-neutral-700">Stories behind every roast, from farm to cup.</p> </div>
+              <div class="bg-white rounded-2xl p-4 shadow"> <strong>Community first</strong> <p class="text-sm text-neutral-700">Spaces for work, study, and connection.</p> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sourcing Story -->
+    <section id="sourcing_story" class="py-12" aria-label="Sourcing Story">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" style="font-family: var(--font-heading);">Sourcing Story</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <figure class="bg-white rounded-2xl p-2 shadow">
+            <img src="assets/images/sourcing-1.jpg" alt="Direct trade with farmers in Colombia" class="w-full h-48 object-cover rounded" />
+            <figcaption class="font-semibold mt-2">Direct trade with farmers</figcaption>
+            <p class="text-sm text-neutral-700">We visit farms to build relationships and ensure quality and equity.</p>
+          </figure>
+          <figure class="bg-white rounded-2xl p-2 shadow">
+            <img src="assets/images/sourcing-2.jpg" alt="Sustainable processing" class="w-full h-48 object-cover rounded" />
+            <figcaption class="font-semibold mt-2">Sustainable processing</figcaption>
+            <p class="text-sm text-neutral-700">Water-saving methods and shade-grown practices.</p>
+          </figure>
+          <figure class="bg-white rounded-2xl p-2 shadow">
+            <img src="assets/images/sourcing-3.jpg" alt="Roasting for flavor" class="w-full h-48 object-cover rounded" />
+            <figcaption class="font-semibold mt-2">Roasting for flavor</figcaption>
+            <p class="text-sm text-neutral-700">Small-batch roasting for nuanced profiles.</p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="py-12" aria-label="Team">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" style="font-family: var(--font-heading);">Meet the Aurora Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-6 shadow">
+            <img src="assets/images/staff-1.jpg" alt="Mara Chen, Head Roaster" class="w-20 h-20 rounded-full mb-3" />
+            <div class="font-semibold">Mara Chen</div>
+            <div class="text-sm text-neutral-700">Head Roaster</div>
+            <p class="text-sm text-neutral-700 mt-2">Passionate about seasonal roasts and sustainable practices.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow">
+            <img src="assets/images/staff-2.jpg" alt="Diego Rivera, Barista Lead" class="w-20 h-20 rounded-full mb-3" />
+            <div class="font-semibold">Diego Rivera</div>
+            <div class="text-sm text-neutral-700">Barista Lead</div>
+            <p class="text-sm text-neutral-700 mt-2">Crafts thoughtful espresso with a friendly smile.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow">
+            <img src="assets/images/staff-3.jpg" alt="Ava Singh, Community Coordinator" class="w-20 h-20 rounded-full mb-3" />
+            <div class="font-semibold">Ava Singh</div>
+            <div class="text-sm text-neutral-700">Community Coordinator</div>
+            <p class="text-sm text-neutral-700 mt-2">Hosts events and fosters connection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="call_to_action" class="py-12" aria-label="Call to action">
+      <div class="max-w-2xl mx-auto px-6 text-center">
+        <h3 class="text-2xl font-semibold mb-2" style="font-family: var(--font-heading);">Join the Aurora Community</h3>
+        <a href="locations.html" class="inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold">Visit Us Today</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-white py-16" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Visit</h4>
+        <a href="locations.html" class="block mb-1 text-neutral-200">Locations</a>
+        <a href="#hours" class="block">Hours</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Menu</h4>
+        <a href="menu.html" class="block mb-1 text-neutral-200">Drinks</a>
+        <a href="menu.html#pastries" class="block">Seasonal</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Community</h4>
+        <a href="locations.html#events_and_news" class="block mb-1 text-neutral-200">Events</a>
+        <a href="about.html" class="block">Catering</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Connect</h4>
+        <div class="flex gap-4 text-2xl" aria-label="Social icons">
+          <a href="#" class="hover:text-primary">Instagram</a>
+          <a href="#" class="hover:text-primary">Newsletter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobileMenuBtn');
+    const panel = document.getElementById('mobileMenu');
+    btn && btn.addEventListener('click', () => {
+      const isHidden = panel.classList.contains('hidden');
+      panel.style.display = isHidden ? 'block' : 'none';
+      panel.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(isHidden));
+    });
+  </script>
+</body>
+</html>
