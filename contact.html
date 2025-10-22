@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Aurora Coffee Collective for questions, feedback, or stories to share." />
+  <title>Aurora Coffee Collective — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#5A3F2D', secondary: '#2A5D3F', accent: '#C98F1E' } } } }
+  </script>
+  <style>
+    :root { --font-heading: 'Playfair Display', serif; --font-body: 'Inter', sans-serif; }
+    html { font-family: var(--font-body); }
+    h1, h2, h3 { font-family: var(--font-heading); }
+  </style>
+</head>
+<body class="bg-white text-neutral-900 font-body">
+  <a href="#main" class="absolute -top-40 left-0 p-4 focus:absolute focus:top-0 bg-white text-black rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500">Skip to content</a>
+  <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50" aria-label="Site header">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-bold text-neutral-900">Aurora Coffee Collective</span>
+      </div>
+      <nav aria-label="Main navigation" class="hidden md:flex items-center gap-8 text-neutral-700">
+        <a href="home.html" class="hover:text-primary">Home</a>
+        <a href="about.html" class="hover:text-primary">About</a>
+        <a href="menu.html" class="hover:text-primary">Menu</a>
+        <a href="locations.html" class="hover:text-primary">Locations</a>
+        <a href="contact.html" class="hover:text-primary">Contact</a>
+      </nav>
+      <a href="menu.html" class="hidden md:inline-block bg-primary text-white px-5 py-2 rounded-full font-semibold hover:scale-105 transition-all duration-300">Order Online</a>
+    </div>
+  </header>
+
+  <main id="main" class="pt-20">
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden" aria-label="Hero">
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/contact-hero.jpg" alt="Friendliest cafe contact" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-neutral-900/60 to-neutral-900/40"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4" style="font-family: var(--font-heading);">Have a question, feedback, or a story to share?</h1>
+        <p class="text-lg md:text-xl text-white/90 mb-6" style="font-family: var(--font-body);">We respond quickly. Your input helps us grow the Aurora community.</p>
+        <a href="#contact_form" class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-full font-semibold">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact_form" class="py-12" aria-label="Contact form">
+      <div class="max-w-3xl mx-auto px-6">
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-6" aria-label="Contact form fields">
+          <div class="col-span-1">
+            <label class="block text-sm font-semibold mb-2" for="name">Your name</label>
+            <input id="name" name="name" type="text" class="w-full border border-neutral-300 rounded-lg px-3 py-2" />
+          </div>
+          <div class="col-span-1">
+            <label class="block text-sm font-semibold mb-2" for="email">Email</label>
+            <input id="email" name="email" type="email" class="w-full border border-neutral-300 rounded-lg px-3 py-2" />
+          </div>
+          <div class="col-span-2">
+            <label class="block text-sm font-semibold mb-2" for="message">Message</label>
+            <textarea id="message" name="message" rows="6" class="w-full border border-neutral-300 rounded-lg px-3 py-2"></textarea>
+          </div>
+          <div class="col-span-2 flex justify-end">
+            <button type="submit" class="bg-primary text-white px-6 py-2 rounded-full">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Social & Hours -->
+    <section id="social_and_hours" class="py-8" aria-label="Social and hours">
+      <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div class="bg-white rounded-2xl shadow p-4" aria-label="Instagram widget placeholder">
+          <div class="text-sm font-semibold mb-2">Instagram</div>
+          <div class="h-24 bg-gray-100 rounded-lg flex items-center justify-center text-neutral-600">Instagram feed placeholder</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-4">
+          <div class="font-semibold mb-2">Hours</div>
+          <div class="text-sm text-neutral-700">Mon–Fri 7am–7pm; Sat–Sun 8am–6pm</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-4">
+          <div class="font-semibold mb-2">Address</div>
+          <div class="text-sm text-neutral-700">123 Main St, Cityville</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Signoff -->
+    <section id="testimonials_signoff" class="py-12" aria-label="Testimonials">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-2xl font-semibold mb-4" style="font-family: var(--font-heading);">What people say</h2>
+        <div class="relative bg-neutral-50 rounded-2xl p-6 shadow-md" aria-label="Carousel">
+          <div class="flex items-center gap-4" aria-live="polite">
+            <blockquote class="text-neutral-700">"Aurora is our go-to for a daily boost and a friendly chat."</blockquote>
+            <span class="ml-auto">C. Lee</span>
+          </div>
+          <div class="sr-only">Testimonial rotates automatically</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral-900 text-white py-12" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Visit</h4>
+        <a href="locations.html" class="block mb-1 text-neutral-200">Locations</a>
+        <a href="#hours" class="block">Hours</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Menu</h4>
+        <a href="menu.html" class="block mb-1 text-neutral-200">Drinks</a>
+        <a href="menu.html#pastries" class="block">Seasonal</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Community</h4>
+        <a href="locations.html#events_and_news" class="block mb-1 text-neutral-200">Events</a>
+        <a href="about.html" class="block">Catering</a>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" style="font-family: var(--font-heading);">Connect</h4>
+        <div class="flex gap-4 text-2xl" aria-label="Social icons">
+          <a href="#" class="hover:text-primary">Instagram</a>
+          <a href="#" class="hover:text-primary">Newsletter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple auto-rotate for testimonials (placeholder for production slider)
+    const quotes = [
+      '"Aurora is our go-to for a daily boost and a friendly chat." - C. Lee',
+      '"Incredible coffee and a space that just feels right." - Jordan M.',
+      '"Sustainably sourced and superbly roasted. Highly recommend." - Alex K.'
+    ];
+    let idx = 0;
+    setInterval(() => {
+      const f = document.querySelector('#testimonials_signoff blockquote');
+      if (f) {
+        idx = (idx + 1) % quotes.length;
+        f.textContent = quotes[idx];
+      }
+    }, 6000);
+  </script>
+</body>
+</html>
